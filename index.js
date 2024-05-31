@@ -11,7 +11,7 @@ let result = fetch(apiURL)
     .then(res => res.json())
     .then(data => {
         if (data.name != undefined){
-        console.log(data.name, data.films)
+        document.getElementById("top").innerHTML = data.name, data.films
     } else {
         
     }
